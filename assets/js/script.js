@@ -67,14 +67,14 @@ function postAverage(average){
 }
 
 function drawFirstTime(){
-    var config = {
+    let config = {
         type: 'line',
         data: {
             labels: new Array(averages.length),
             datasets: [{
                 label: 'Average Number of Polling the API',
-                backgroundColor: "red",
-                borderColor: "red",
+                borderColor: "black",
+                backgroundColor: 'black',
                 data: averages,
                 fill: false,
             }]
@@ -83,7 +83,9 @@ function drawFirstTime(){
             responsive: false,
             title: {
                 display: true,
-                text: 'Dit is een grafiek!'
+                text: 'Line charts are cool!',
+                fontSize: '24',
+                fontColor: 'Black'
             },
             tooltips: {
                 mode: 'index',
